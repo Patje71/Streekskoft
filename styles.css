@@ -145,6 +145,11 @@ h1, h2, h3 {
 }
 
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+/* mobiel: kamerkaarten en formuliervelden onder elkaar i.p.v. platgedrukt naast elkaar */
+@media (max-width: 700px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
 .field { display: flex; flex-direction: column; gap: .35rem; }
 label { font-weight: 600; font-size: .9rem; }
 input, textarea, select {
