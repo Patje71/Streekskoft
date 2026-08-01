@@ -59,6 +59,28 @@ h1, h2, h3 {
 .grid-4 { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0.75rem; }
 .gallery-item img { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; cursor: pointer; }
 
+.about .about-photo {
+  float: right;
+  width: 280px;
+  max-width: 40%;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.about .about-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* zorgt dat volgende elementen niet om de foto heen blijven vloeien */
+.about .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* Lightbox overlay (standaard verborgen) */
 .lightbox {
   position: fixed;
