@@ -81,6 +81,16 @@ h1, h2, h3 {
   clear: both;
 }
 
+/* zorgt dat foto float wordt uitgezet op een mobiele telefoon omdat dit vaak niet goed toont */
+@media (max-width: 600px) {
+  .about .about-photo {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
 /* Lightbox overlay (standaard verborgen) */
 .lightbox {
   position: fixed;
